@@ -7,6 +7,7 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
+    <groupId>com.copy_file</groupId>
     <modelVersion>4.0.0</modelVersion>
     <artifactId>copy_file</artifactId>
     <version>0.0.1-SNAPSHOT</version>

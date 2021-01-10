@@ -20,6 +20,7 @@
         <module>copy_file</module>
         <module>common</module>
         <module>netty</module>
+        <module>lombok</module>
     </modules>
 
     <packaging>pom</packaging>

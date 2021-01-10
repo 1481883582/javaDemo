@@ -8,15 +8,15 @@
         <version>0.0.1-SNAPSHOT</version>
     </parent>
 
-    <groupId>com.netty</groupId>
-    <artifactId>netty</artifactId>
+    <groupId>com.lombok</groupId>
+    <artifactId>lombok</artifactId>
     <version>0.0.1-SNAPSHOT</version>
-    <name>netty</name>
-    <description>socket工具</description>
+    <name>lombok</name>
+    <description>一些lombok相关的demo</description>
 
-    <!--    <properties>-->
-    <!--        <java.version>1.8</java.version>-->
-    <!--    </properties>-->
+<!--    <properties>-->
+<!--        <java.version>1.8</java.version>-->
+<!--    </properties>-->
 
     <dependencies>
         <dependency>
@@ -24,18 +24,15 @@
             <artifactId>common</artifactId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
+        <dependency>
+            <groupId>org.projectlombok</groupId>
+            <artifactId>lombok</artifactId>
+        </dependency>
         <!--        <dependency>-->
-        <!--            <groupId>org.springframework.boot</groupId>-->
-        <!--            <artifactId>spring-boot-starter-web</artifactId>-->
-        <!--        </dependency>-->
-        <!--        &lt;!&ndash; https://mvnrepository.com/artifact/io.netty/netty-all &ndash;&gt;-->
-        <!--        <dependency>-->
-        <!--            <groupId>io.netty</groupId>-->
-        <!--            <artifactId>netty-all</artifactId>-->
-        <!--            <version>4.1.6.Final</version>-->
-        <!--        </dependency>-->
+<!--            <groupId>org.projectlombok</groupId>-->
+<!--            <artifactId>lombok</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
-
     <build>
         <plugins>
             <!--SpringCloud的打成可执行的jar包插件-->
@@ -95,4 +92,5 @@
             </plugin>
         </plugins>
     </build>
+
 </project>
