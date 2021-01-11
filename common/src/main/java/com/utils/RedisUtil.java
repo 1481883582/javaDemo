@@ -26,6 +26,21 @@ public class RedisUtil {
 	}
 
 	/**
+	 * 发布信息
+	 * @param channel  通道
+	 * @param msg  发送的信息
+	 * @return
+	 */
+	public boolean convertAndSend(String channel, String msg) {
+		try {
+			redisTemplate.convertAndSend(channel, msg);
+		} catch (Exception e) {
+			log.error(e.getMessage(), e);
+		}
+		return false;
+	}
+
+	/**
 	 * 指定缓存失效时间
 	 *
 	 * @param key  键
