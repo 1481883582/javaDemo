@@ -1,5 +1,6 @@
-package com;
+package com.utils;
 
+import io.netty.util.CharsetUtil;
 import lombok.extern.slf4j.Slf4j;
 import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
@@ -12,6 +13,10 @@ import java.util.UUID;
 
 @Slf4j
 public class Strings extends StringUtils {
+	/**
+	 * 下划线
+	 */
+	private static final char SEPARATOR = '_';
 
 	/**
 	 * 去掉字符串指定的前缀
@@ -38,12 +43,6 @@ public class Strings extends StringUtils {
 		}
 	}
 
-
-	/**
-	 * 下划线
-	 */
-	private static final char SEPARATOR = '_';
-
 	public static String getStringByEnter(int length, String string) {
 		if (isEmpty(string)) return EMPTY;
 		for (int i = 1; i <= string.length(); i++) {
@@ -55,20 +54,34 @@ public class Strings extends StringUtils {
 		return string;
 	}
 
+	/**
+	 *返回去掉-的  16位Id
+	 * @return
+	 */
 	public static String UUId16() {
 		String uuId = Strings.UUId();
 		uuId = uuId.replaceAll("-", "");
 		return uuId.substring(0, 16);
 	}
 
+	/**
+	 * 返回UUId
+	 * @return
+	 */
+	public static String UUId() {
+		return UUID.randomUUID().toString();
+	}
+
+
+	/**
+	 * 返回当前字符串毫秒
+	 * @return
+	 */
 	public static String currentTimeMillis() {
 		return String.valueOf(System.currentTimeMillis());
 	}
 
-	public static String UUId() {
-		UUID uuid = UUID.randomUUID();
-		return uuid.toString().replaceAll("-", "");
-	}
+
 
 	/**
 	 * min-max之间的随机数
@@ -92,7 +105,7 @@ public class Strings extends StringUtils {
 			return 0;
 		}
 		try {
-			return Integer.valueOf(str).intValue();
+			return Integer.valueOf(str);
 		} catch (NumberFormatException e) {
 			log.error(e.toString());
 		}
@@ -101,7 +114,7 @@ public class Strings extends StringUtils {
 	}
 
 	public static boolean isEmpty(List<Object> value) {
-		if (value == null || value.isEmpty() || value.size() == 0) {
+		if (value == null || value.isEmpty()) {
 			return true;
 		}
 		return false;
@@ -109,6 +122,17 @@ public class Strings extends StringUtils {
 
 	public static boolean isEmpty(Object[] value) {
 		if (value == null || value.length == 0) {
+			return true;
+		}
+		return false;
+	}
+
+	public static boolean isNotEmpty(Long value) {
+		return !isEmpty(value);
+	}
+
+	public static boolean isEmpty(Long value) {
+		if (value == null || EMPTY.equals(value) || 0L == value) {
 			return true;
 		}
 		return false;
@@ -535,5 +559,15 @@ public class Strings extends StringUtils {
 	 */
 	public static String nullToString(Object obj) {
 		return ObjectUtils.toString(obj).trim();
+	}
+
+	/**
+	 * 转换成string
+	 * @param bytes
+	 * @return
+	 */
+	public static String toString(byte[] bytes) {
+		if(Strings.isEmpty(bytes)) return Strings.EMPTY;
+		return new String(bytes, CharsetUtil.UTF_8);
 	}
 }
