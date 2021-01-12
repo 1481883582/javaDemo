@@ -20,8 +20,8 @@ public class SwaggerConfig {
                 .groupName("任务")
                 .apiInfo(apiInfo())
                 .select()
-                .apis(RequestHandlerSelectors.basePackage("com.jln.system"))
-                .paths(PathSelectors.regex("/task.*"))
+                .apis(RequestHandlerSelectors.basePackage("com"))
+                .paths(PathSelectors.regex("/test.*"))
                 .build();
     }
 

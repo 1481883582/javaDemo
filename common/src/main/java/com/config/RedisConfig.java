@@ -2,7 +2,7 @@ package com.config;
 
 import com.consts.RedisPublishConst;
 import com.enums.Jackson2Json;
-import com.redis.listeners.RedisListener;
+import com.listeners.RedisListener;
 import org.springframework.cache.annotation.CachingConfigurerSupport;
 import org.springframework.cache.annotation.EnableCaching;
 import org.springframework.context.annotation.Bean;

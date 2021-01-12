@@ -1,10 +1,9 @@
-package com.redis.listeners;
+package com.listeners;
 
 import com.utils.Strings;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.data.redis.connection.Message;
 import org.springframework.stereotype.Component;
-import org.springframework.stereotype.Service;
 
 @Slf4j
 @Component

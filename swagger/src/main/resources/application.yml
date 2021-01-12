@@ -1,8 +1,10 @@
-
+#端口
+server:
+  port: 8080
 ## 应用名称
 spring:
   application:
-    name: redisDemo
+    name: swaggeer
   #  profiles:
   #    active: prod
   datasource:
