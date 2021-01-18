@@ -1,4 +1,4 @@
-package com.config;
+package com.swagger_demo.config;
 
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
@@ -17,7 +17,7 @@ public class SwaggerConfig {
     @Bean
     public Docket createRestApiTask() {
         return new Docket(DocumentationType.SWAGGER_2)
-                .groupName("任务")
+                .groupName("测试")
                 .apiInfo(apiInfo())
                 .select()
                 .apis(RequestHandlerSelectors.basePackage("com"))

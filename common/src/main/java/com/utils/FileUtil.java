@@ -27,6 +27,16 @@ public class FileUtil {
 	}
 
 	/**
+	 * 判断该文件路径  文件或目录是否存在
+	 * @param filePath  文件路径
+	 * @return  存在返回true  不存在返回false
+	 */
+	public static boolean exists(String filePath){
+		if(new File(filePath).exists()) return true;
+		return false;
+	}
+
+	/**
 	 *
 	 * @param copyPath  复制的文件
 	 * @param configDir       复制到那个目录

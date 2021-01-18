@@ -6,6 +6,7 @@ import org.apache.commons.lang3.ObjectUtils;
 import org.apache.commons.lang3.StringUtils;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Collection;
 import java.util.List;
 import java.util.Map;
@@ -568,6 +569,6 @@ public class Strings extends StringUtils {
 	 */
 	public static String toString(byte[] bytes) {
 		if(Strings.isEmpty(bytes)) return Strings.EMPTY;
-		return new String(bytes, CharsetUtil.UTF_8);
+		return new String(bytes, StandardCharsets.UTF_8);
 	}
 }
