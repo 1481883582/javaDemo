@@ -25,6 +25,7 @@
         <module>redis</module>
         <module>scheduled</module>
         <module>swagger</module>
+        <module>java_fx</module>
     </modules>
 
     <packaging>pom</packaging>
