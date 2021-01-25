@@ -67,6 +67,7 @@ public class SystemTrayUtil {
 
 	private SystemTrayUtil(){
 		try {
+			if(Strings.isEmpty(SystemTrayUtil.png) || Strings.isEmpty(SystemTrayUtil.appName)) return;
 			//检查系统是否支持托盘
 			if (!SystemTray.isSupported()) {
 				//系统托盘不支持
