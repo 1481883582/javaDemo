@@ -1,6 +1,8 @@
 #端口
 server:
   port: 8081
+#javaFx:
+#  png: /icon.png
 ## 应用名称
 spring:
   application:

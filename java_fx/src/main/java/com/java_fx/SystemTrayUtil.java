@@ -4,6 +4,8 @@ import com.utils.Strings;
 import javafx.application.Platform;
 import javafx.stage.Stage;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.beans.factory.annotation.Value;
+import org.springframework.stereotype.Component;
 
 import java.awt.*;
 import java.awt.event.ActionListener;
@@ -17,6 +19,7 @@ import java.net.URL;
  * 自定义系统托盘(单例模式)
  */
 @Slf4j
+@Component
 public class SystemTrayUtil {
 
 	private static SystemTrayUtil instance;
@@ -26,6 +29,20 @@ public class SystemTrayUtil {
 	private static ActionListener showListener;
 	private static ActionListener exitListener;
 	private static MouseListener mouseListener;
+	//图片默认路径
+	private static String png;
+	//服务名
+	private static String appName;
+
+	@Value("${javaFx.png:/icon.png}")
+	public void setPng(String png) {
+		SystemTrayUtil.png = png;
+	}
+
+	@Value("${spring.application.name:default}")
+	public void setAppName(String appName) {
+		SystemTrayUtil.appName = appName;
+	}
 
 	static{
 		//执行stage.close()方法,窗口不直接退出
@@ -35,11 +52,6 @@ public class SystemTrayUtil {
 //		showItem = new MenuItem("打开");
 		//菜单项(退出)
 		exitItem = new MenuItem("退出");
-		//此处不能选择ico格式的图片,要使用16*16的png格式的图片
-		URL url = SystemTrayUtil.class.getResource("/icon.png");
-		Image image = Toolkit.getDefaultToolkit().getImage(url);
-		//系统托盘图标
-		trayIcon = new TrayIcon(image);
 		//初始化监听事件(空)
 		showListener = e -> Platform.runLater(() -> {});
 		exitListener = e -> {};
@@ -61,6 +73,11 @@ public class SystemTrayUtil {
 				log.info(Thread.currentThread().getStackTrace()[ 1 ].getClassName() + ":系统托盘不支持");
 				return;
 			}
+			//此处不能选择ico格式的图片,要使用16*16的png格式的图片
+			URL url = SystemTrayUtil.class.getResource(SystemTrayUtil.png);
+			Image image = Toolkit.getDefaultToolkit().getImage(url);
+			//系统托盘图标
+			trayIcon = new TrayIcon(image);
 			//设置图标尺寸自动适应
 			trayIcon.setImageAutoSize(true);
 			//系统托盘
@@ -71,7 +88,7 @@ public class SystemTrayUtil {
 			popup.add(exitItem);
 			trayIcon.setPopupMenu(popup);
 			//鼠标移到系统托盘,会显示提示文本
-			trayIcon.setToolTip("提示文本");
+			trayIcon.setToolTip(SystemTrayUtil.appName);
 			tray.add(trayIcon);
 		} catch (Exception e) {
 			//系统托盘添加失败
@@ -103,15 +120,15 @@ public class SystemTrayUtil {
 			System.exit(0);
 		};
 		//鼠标行为事件: 单机显示stage
-		mouseListener = new MouseAdapter() {
-			@Override
-			public void mouseClicked(MouseEvent e) {
-				//鼠标左键
-				if (e.getButton() == MouseEvent.BUTTON1) {
-					showStage(stage);
-				}
-			}
-		};
+//		mouseListener = new MouseAdapter() {
+//			@Override
+//			public void mouseClicked(MouseEvent e) {
+//				//鼠标左键
+//				if (e.getButton() == MouseEvent.BUTTON1) {
+//					showStage(stage);
+//				}
+//			}
+//		};
 		//给菜单项添加事件
 //		showItem.addActionListener(showListener);
 		exitItem.addActionListener(exitListener);

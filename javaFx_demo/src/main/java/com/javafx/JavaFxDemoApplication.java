@@ -17,12 +17,12 @@ public class JavaFxDemoApplication {
 
 
 
-	public static FXMLLoader LoadFxml(String fxmlPath) {
-		FXMLLoader fxmlLoader = new FXMLLoader();
-		fxmlLoader.setLocation(JavaFxDemoApplication.class.getResource(fxmlPath));
-		fxmlLoader.setControllerFactory(applicationContext::getBean);
-		return fxmlLoader;
-	}
+//	public static FXMLLoader LoadFxml(String fxmlPath) {
+//		FXMLLoader fxmlLoader = new FXMLLoader();
+//		fxmlLoader.setLocation(JavaFxDemoApplication.class.getResource(fxmlPath));
+//		fxmlLoader.setControllerFactory(applicationContext::getBean);
+//		return fxmlLoader;
+//	}
 
 	public static void main(String[] args) {
 		applicationContext = SpringApplication.run(JavaFxDemoApplication.class, args);
