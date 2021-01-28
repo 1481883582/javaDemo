@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane fx:id="anchorPaneRoot" prefHeight="430.0" prefWidth="700.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.jln.fx.fxcontroller.ConfigFXController">
+   <children>
+       <GridPane prefHeight="430.0" prefWidth="700.0" BorderPane.alignment="CENTER">
+           <columnConstraints>
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+               <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="10.0" />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+            <ColumnConstraints />
+           </columnConstraints>
+           <rowConstraints>
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+               <RowConstraints minHeight="10.0" prefHeight="10.0" vgrow="SOMETIMES" />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+            <RowConstraints />
+           </rowConstraints>
+           <children>
+               <Label text="基本配置" GridPane.columnIndex="10" GridPane.columnSpan="8" GridPane.rowIndex="4" GridPane.rowSpan="2" />
+               <Label layoutX="50.0" layoutY="44.0" text="配置别名" GridPane.columnIndex="14" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+               <Label layoutX="50.0" layoutY="44.0" text="采集方式" GridPane.columnIndex="14" GridPane.columnSpan="8" GridPane.rowIndex="12" GridPane.rowSpan="2" />
+               <Label layoutX="10.0" layoutY="8.0" text="采集间隔" GridPane.columnIndex="14" GridPane.columnSpan="8" GridPane.rowIndex="16" GridPane.rowSpan="2" />
+               <Label layoutX="10.0" layoutY="8.0" text="服务器名称" GridPane.columnIndex="43" GridPane.columnSpan="8" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+               <Label layoutX="10.0" layoutY="8.0" text="数据库配置" GridPane.columnIndex="10" GridPane.columnSpan="8" GridPane.rowIndex="24" GridPane.rowSpan="2" />
+               <Label layoutX="60.0" layoutY="194.0" text="数据库IP" GridPane.columnIndex="14" GridPane.columnSpan="8" GridPane.rowIndex="28" GridPane.rowSpan="2" />
+               <Label layoutX="90.0" layoutY="254.0" text="表名种子" GridPane.columnIndex="14" GridPane.columnSpan="8" GridPane.rowIndex="32" GridPane.rowSpan="2" />
+               <Label layoutX="90.0" layoutY="284.0" text="数据库名" GridPane.columnIndex="43" GridPane.columnSpan="8" GridPane.rowIndex="28" GridPane.rowSpan="2" />
+               <Label layoutX="60.0" layoutY="344.0" text="Redis-IP" GridPane.columnIndex="14" GridPane.columnSpan="8" GridPane.rowIndex="36" GridPane.rowSpan="2" />
+               <Label layoutX="90.0" layoutY="404.0" text="Redis-前缀" GridPane.columnIndex="43" GridPane.columnSpan="8" GridPane.rowIndex="36" GridPane.rowSpan="2" />
+
+
+               <!--                               下面是数据局-->
+               <!--                               采集名称-->
+               <Label fx:id="Title" layoutX="50.0" layoutY="44.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="22" GridPane.columnSpan="16" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+               <!--                               opc的采集种类-->
+               <Label fx:id="OpcType" layoutX="50.0" layoutY="44.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="22" GridPane.columnSpan="16" GridPane.rowIndex="12" GridPane.rowSpan="2" />
+               <!--                              数据采集间隔 -->
+               <Label fx:id="SendEach" layoutX="10.0" layoutY="8.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="22" GridPane.columnSpan="16" GridPane.rowIndex="16" GridPane.rowSpan="2" />
+               <!--                              OPC服务名称 -->
+               <Label fx:id="OpcServer" layoutX="10.0" layoutY="8.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="52" GridPane.columnSpan="16" GridPane.rowIndex="8" GridPane.rowSpan="2" />
+               <!--                               数据库类型-->
+               <Label fx:id="DatabaseType" layoutX="10.0" layoutY="8.0" GridPane.columnIndex="20" GridPane.columnSpan="16" GridPane.rowIndex="24" GridPane.rowSpan="2" />
+               <!--                               连接数据库IP-->
+               <Label fx:id="DatabaseIP" layoutX="60.0" layoutY="194.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="22" GridPane.columnSpan="16" GridPane.rowIndex="28" GridPane.rowSpan="2" />
+               <!--                               示范表名称  表名种子-->
+               <Label fx:id="ExpTable" layoutX="90.0" layoutY="254.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="22" GridPane.columnSpan="16" GridPane.rowIndex="32" GridPane.rowSpan="2" />
+               <!--                               连接数据库名称-->
+               <Label fx:id="DatabaseName" layoutX="90.0" layoutY="284.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="52" GridPane.columnSpan="16" GridPane.rowIndex="28" GridPane.rowSpan="2" />
+               <!--                               Redis的IP+端口-->
+               <Label fx:id="RedisIP" layoutX="60.0" layoutY="344.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="22" GridPane.columnSpan="16" GridPane.rowIndex="36" GridPane.rowSpan="2" />
+               <!--                               regis的保存前缀-->
+               <Label fx:id="RedisPre" layoutX="90.0" layoutY="404.0" prefHeight="20.0" prefWidth="150.0" text="" GridPane.columnIndex="52" GridPane.columnSpan="16" GridPane.rowIndex="36" GridPane.rowSpan="2" />
+           </children>
+       </GridPane>
+   </children>
+</AnchorPane>

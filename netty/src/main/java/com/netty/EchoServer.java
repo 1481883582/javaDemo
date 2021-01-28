@@ -73,7 +73,7 @@ public class EchoServer {
 
 	public static void main(String[] args) throws Exception {
 
-		new EchoServer(8888).start(); // 启动
+		new EchoServer(7788).start(); // 启动
 
 
 	}
