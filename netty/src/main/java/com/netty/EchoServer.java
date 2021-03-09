@@ -1,6 +1,7 @@
 package com.netty;
 
 import java.nio.charset.Charset;
+import java.nio.charset.StandardCharsets;
 import java.util.Scanner;
 
 import com.utlis.ThreadUtil;
@@ -44,7 +45,7 @@ public class EchoServer {
 							System.out.println("Port:" + ch.localAddress().getPort());
 							System.out.println("报告完毕");
 
-							ch.pipeline().addLast(new StringEncoder(Charset.forName("GBK")));
+							ch.pipeline().addLast(new StringEncoder(StandardCharsets.US_ASCII));
 							ch.pipeline().addLast(new EchoServerHandler()); // 客户端触发操作
 							ch.pipeline().addLast(new ByteArrayEncoder());
 						}
@@ -73,7 +74,7 @@ public class EchoServer {
 
 	public static void main(String[] args) throws Exception {
 
-		new EchoServer(7788).start(); // 启动
+		new EchoServer(55006).start(); // 启动
 
 
 	}

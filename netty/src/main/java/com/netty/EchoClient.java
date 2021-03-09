@@ -69,7 +69,7 @@ public class EchoClient {
 	}
 
 	public static void main(String[] args) throws Exception {
-		EchoClient client = new EchoClient("127.0.0.1", 7788); // 连接127.0.0.1/65535，并启动
+		EchoClient client = new EchoClient("127.0.0.1", 55006); // 连接127.0.0.1/65535，并启动
 		client.start();
 
 

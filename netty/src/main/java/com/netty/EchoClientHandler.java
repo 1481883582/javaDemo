@@ -42,31 +42,31 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 
 	@Override
 	protected void channelRead0(ChannelHandlerContext ctx, ByteBuf msg) throws Exception {
-		try {
-			ByteBuf buf = msg;
-//创建目标大小的数组
-			byte[] barray = new byte[buf.readableBytes()];
-//把数据从bytebuf转移到byte[]
-			buf.getBytes(0,barray);
-//			log.info(Arrays.toString(barray));
+//		try {
+//			ByteBuf buf = msg;
+////创建目标大小的数组
+//			byte[] barray = new byte[buf.readableBytes()];
+////把数据从bytebuf转移到byte[]
+//			buf.getBytes(0,barray);
+////			log.info(Arrays.toString(barray));
+////			System.out.println();
+//			for (int i=0; i<barray.length; i++)
+//			{
+//
+//				if(i<10){
+//					if(i<2){
+//						System.out.print(Integer.toHexString(barray[i] & 0xff));
+//						continue;
+//					}
+//					System.out.print(barray[i] & 0xff);
+//					continue;
+//				}
+//				if (barray[i] < 0)
+//					System.out.print((char)(barray[i] & 0xff));
+//				else
+//					System.out.print((char)(barray[i]));
+//			}
 //			System.out.println();
-			for (int i=0; i<barray.length; i++)
-			{
-
-				if(i<10){
-					if(i<2){
-						System.out.print(Integer.toHexString(barray[i] & 0xff));
-						continue;
-					}
-					System.out.print(barray[i] & 0xff);
-					continue;
-				}
-				if (barray[i] < 0)
-					System.out.print((char)(barray[i] & 0xff));
-				else
-					System.out.print((char)(barray[i]));
-			}
-			System.out.println();
 			//将byte[]转成字符串用于打印
 //			String str=new String(barray);
 //			if (str.length()>0)
@@ -79,14 +79,14 @@ public class EchoClientHandler extends SimpleChannelInboundHandler<ByteBuf> {
 //				System.out.println("不能读啊");
 //			}
 //			buf.release();
-		}finally {
+//		}finally {
 //buf.release();
-		}
-//		System.out.println("读取客户端通道信息..");
-//		ByteBuf buf = msg.readBytes(msg.readableBytes());
-////		System.out.println(
-////				"客户端接收到的服务端信息:" + ByteBufUtil.hexDump(buf) + "; 数据包为:" + buf.toString(Charset.forName("utf-8")));
-//		log.info("客户端接收到的服务端信息:" + buf.toString(CharsetUtil.UTF_8));
+//		}
+		System.out.println("读取客户端通道信息..");
+		ByteBuf buf = msg.readBytes(msg.readableBytes());
+		System.out.println(
+				"客户端接收到的服务端信息:" + ByteBufUtil.hexDump(buf) + "; 数据包为:" + buf.toString(Charset.forName("utf-8")));
+		log.info("客户端接收到的服务端信息:" + buf.toString(CharsetUtil.UTF_8));
 	}
 
 

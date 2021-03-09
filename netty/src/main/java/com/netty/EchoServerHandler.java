@@ -9,6 +9,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Component;
 
 import javax.annotation.Resource;
+import java.nio.charset.StandardCharsets;
 
 @Slf4j
 @Component
@@ -50,7 +51,7 @@ public class EchoServerHandler extends ChannelInboundHandlerAdapter {
 	private String getMessage(ByteBuf buf) {
 		byte[] con = new byte[buf.readableBytes()];
 		buf.readBytes(con);
-		return new String(con, CharsetUtil.UTF_8);
+		return new String(con, StandardCharsets.US_ASCII);
 	}
 
 	/**
